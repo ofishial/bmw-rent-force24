@@ -1,0 +1,252 @@
+/*----------------------------- Interactive ------------------------------*/
+/* Buttons */
+@media screen {
+  .btn-green:hover a {
+    background-color: #108000 !important;
+    border-color: #108000 !important; }
+  .btn-red:hover a {
+    background-color: #B80000 !important;
+    border-color: #B80000 !important; }
+  .btn-orange:hover a {
+    background-color: #F95700 !important;
+    border-color: #F95700 !important; }
+  .btn-grey:hover a {
+    background-color: #000000 !important;
+    border-color: #000000 !important; }
+  .btn-shadow:hover a {
+    background-color: #D4D7DE !important;
+    border-color: #000000 !important; }
+  .btn-ghost:hover a {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-color: #FFFFFF !important; }
+  .btn-signin:hover a {
+    background-color: #2CA01C !important;
+    border-color: #2CA01C !important; } }
+
+/* Social */
+@media screen {
+  .social a:hover {
+    background-color: #FFFFFF !important; } }
+
+/* Trust Pilot */
+@media screen {
+  .star1:hover img,
+  * [summary=star1]:hover img {
+    background-color: #ef3a30 !important; }
+  .star2:hover img, .star2:hover ~ .star1 img,
+  * [summary=star2]:hover img {
+    background-color: #fb6e38 !important; }
+  .star3:hover img, .star3:hover ~ .star2 img, .star3:hover ~ .star1 img,
+  * [summary=star3]:hover img {
+    background-color: #ffc848 !important; }
+  .star4:hover img, .star4:hover ~ .star3 img, .star4:hover ~ .star2 img, .star4:hover ~ .star1 img,
+  * [summary=star4]:hover img {
+    background-color: #70b04d !important; }
+  .star5:hover img, .star5:hover ~ .star4 img, .star5:hover ~ .star3 img, .star5:hover ~ .star2 img, .star5:hover ~ .star1 img,
+  * [summary=star5]:hover img {
+    background-color: #2f7f51 !important; } }
+
+/*----------------------------- Fonts ------------------------------*/
+@media screen {
+  @font-face {
+    font-family: Avenir;
+    src: local("Avenir Next Regular"), local("AvenirNext-Regular"), url(https://assets.intuitcdn.net/fonts/avenir-400.woff2) format("woff2"), url(https://assets.intuitcdn.net/fonts/avenir-400.woff) format("woff");
+    font-style: normal;
+    font-weight: 400; }
+  @font-face {
+    font-family: Avenir-Demi;
+    src: local("Avenir Next Demi"), local("AvenirNext-Demi"), url(https://assets.intuitcdn.net/fonts/avenir-600.woff2) format("woff2"), url(https://assets.intuitcdn.net/fonts/avenir-600.woff) format("woff");
+    font-style: normal;
+    font-weight: 600; }
+  @font-face {
+    font-family: Avenir-Bold;
+    src: local("Avenir Next Bold"), local("AvenirNext-Bold"), url(https://assets.intuitcdn.net/fonts/avenir-700.woff2) format("woff2"), url(https://assets.intuitcdn.net/fonts/avenir-700.woff) format("woff");
+    font-style: normal;
+    font-weight: 700; }
+  h1 {
+    font-family: "Avenir-Bold", Helvetica, Arial, sans-serif !important; }
+  h2, h3, h4 {
+    font-family: "Avenir-Demi", Helvetica, Arial, sans-serif !important; }
+  p, td, th, li {
+    font-family: "Avenir", Helvetica, Arial, sans-serif !important; }
+  .blueban-footer a {
+    color: #ECEEF1 !important;
+    text-decoration: none !important; }
+  #MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit; } }
+
+/*----------------------------- Media Queries ------------------------------*/
+@media screen and (min-width: 930px) {
+  .wider {
+    width: 930px !important; }
+  .wider .row {
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
+  .wider .column {
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
+  .standard {
+    max-width: 620px !important; }
+  .standard .row {
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+  .standard .column {
+    padding-left: 10px !important;
+    padding-right: 10px !important; } }
+
+@media screen and (min-width: 620px) and (max-width: 930px) {
+  .hide-on-720 {
+    display: none !important;
+    visibility: hidden !important; }
+  .wider {
+    width: 100% !important; }
+  .standard {
+    max-width: 620px !important; }
+  .standard .row {
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+  .standard .column {
+    padding-left: 10px !important;
+    padding-right: 10px !important; } }
+
+@media screen {
+  a[href^="x-apple-data-detectors"], a[href^="tel"], a[href^="sms"] {
+    text-decoration: none;
+    color: #21ABF6;
+    /* or whatever your want */
+    pointer-events: none;
+    cursor: default; }
+  /************* Max-Heights ***********/
+  .mh5 {
+    max-height: 5px; }
+  .mh10 {
+    max-height: 10px; }
+  .mh20 {
+    max-height: 20px; }
+  .mh130 {
+    max-height: 130px; }
+  .mh180 {
+    max-height: 180px; }
+  .mh280 {
+    max-height: 280px; }
+  /************* Max-Widths ***********/
+  .mw5 {
+    max-width: 5px; }
+  .mw10 {
+    max-width: 10px; }
+  .mw20 {
+    max-width: 20px; }
+  .mw130 {
+    max-width: 130px; }
+  .mw180 {
+    max-width: 180px; }
+  .mw280 {
+    max-width: 280px; }
+  .mw380 {
+    max-width: 380px; } }
+
+@media screen and (max-width: 620px) {
+  .section, .container, .section, .content-container, .content, .hero-split, .responsive, .break-content {
+    width: 100% !important; }
+  .break-content-sides, .break-content-sides table {
+    min-width: 20px !important;
+    width: 20px !important; }
+  .column-narrow {
+    padding: 10px !important; }
+  .fluid, .fluid-centered {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important; }
+  .fluid-centered {
+    margin-left: auto !important;
+    margin-right: auto !important; }
+  .pb0-612 {
+    padding-bottom: 0px !important; }
+  .max130 {
+    max-width: 130px !important; }
+  .max180 {
+    max-width: 180px !important; }
+  .max280 {
+    max-width: 280px !important; }
+  .stackCol-tablet, .stackCol-tablet-center {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0px !important; }
+  .stackCol-tablet-center, .stackCol-tablet-center th {
+    text-align: center !important; }
+  .center-on-small {
+    text-align: center !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    vertical-align: center; }
+  table.center-on-small {
+    display: inline-block !important; }
+  .hide-on-tablet {
+    display: none !important;
+    visibility: hidden !important; }
+  h1.cta-statement {
+    font-size: 24px !important;
+    line-height: 30px !important; }
+  .button {
+    float: none; }
+  .button td, .button a {
+    min-width: 150px !important; }
+  .floatnone {
+    float: none !important; }
+  .three-ticks {
+    width: 220px !important; }
+  .pb0m {
+    padding-bottom: 0px !important; } }
+
+@media screen and (max-width: 479px) {
+  .footer {
+    width: 100% !important; }
+  .stack-footer-column {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important; }
+  .stackCol-mobileL, .stackCol-mobileL th {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important; }
+  .stackCol-mobileL th, .stackCol-mobileL th th {
+    text-align: center !important; }
+  .center-on-479 {
+    text-align: center !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    vertical-align: center; } }
+
+@media screen and (max-width: 374px) {
+  .hide-on-mobileM {
+    display: none !important;
+    visibility: hidden !important; }
+  .center-on-374 {
+    text-align: center !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    vertical-align: center; }
+  .stackCol-mobileM, .stackCol-mobileM th {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important; }
+  .stackCol-mobileM-center, .stackCol-mobileM-center th {
+    text-align: center !important; } }

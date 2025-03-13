@@ -1,0 +1,47 @@
+@media screen {
+
+  @font-face { font-family: 'CFontH'; font-style: normal; font-weight: normal;
+  src: url('https://tmw-static.s3.eu-west-1.amazonaws.com/Alphabet-BMW-Template/BMWGroupTNCondensedPro-Bold.woff') format('woff'); }
+
+  @font-face { font-family: 'CFontH'; font-style: normal; font-weight: bold;
+  src: url('https://tmw-static.s3.eu-west-1.amazonaws.com/Alphabet-BMW-Template/BMWGroupTNCondensedPro-Bold.woff') format('woff'); }
+
+  @font-face { font-family: 'CFontH'; font-style: italic; font-weight: normal;
+  src: url('https://tmw-static.s3.eu-west-1.amazonaws.com/Alphabet-BMW-Template/BMWGroupTNCondensedPro-Bold.woff') format('woff'); }
+
+  @font-face { font-family: 'CFontH'; font-style: italic; font-weight: bold;
+  src: url('https://tmw-static.s3.eu-west-1.amazonaws.com/Alphabet-BMW-Template/BMWGroupTNCondensedPro-Bold.woff') format('woff'); }
+
+  @font-face { font-family: 'CFontP'; font-style: normal; font-weight: normal;
+  src: url('https://tmw-static.s3.eu-west-1.amazonaws.com/Alphabet-BMW-Template/BMWGroupTNPro-Light.woff') format('woff'); }
+
+  @font-face { font-family: 'CFontP'; font-style: normal; font-weight: bold;
+  src: url('https://tmw-static.s3.eu-west-1.amazonaws.com/Alphabet-BMW-Template/BMWGroupTNPro-Light.woff') format('woff'); }
+
+  @font-face { font-family: 'CFontP'; font-style: italic; font-weight: normal;
+  src: url('https://tmw-static.s3.eu-west-1.amazonaws.com/Alphabet-BMW-Template/BMWGroupTNPro-Light.woff') format('woff'); }
+
+  @font-face { font-family: 'CFontP'; font-style: italic; font-weight: bold;
+  src: url('https://tmw-static.s3.eu-west-1.amazonaws.com/Alphabet-BMW-Template/BMWGroupTNPro-Light.woff') format('woff'); }
+
+  h1, h2, h3, h4, h5, h6, p, .btn a {
+    font-family: 'CFontH', Arial, sans-serif !important;
+  }
+
+  p, td, th, ul, ol, li, a {
+    font-family: 'CFontP', Arial, sans-serif !important;
+  }
+
+  p, .para, .p1, .p2, .p3, .p4, a, ul, ol, li { font-weight: 300 !important; }
+  p.bold { font-weight: bold !important; }
+  .btn a, .cta a { font-weight: bold !important; }
+
+  #MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+}

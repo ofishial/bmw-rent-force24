@@ -1,0 +1,15 @@
+@media screen {
+    
+    .btn-one:hover a { background-color: $colorbtn01Hvr !important; border-color: $colorbtn01Hvr !important; color: $colorbtn01TxtHvr !important; transition: all .3s ease-in-out 0s; }
+    .btn-one:hover td { background-color: $colorbtn01Hvr !important; transition: all .3s ease-in-out 0s; }
+    .btn-two:hover a { background-color: $colorbtn02Hvr !important; border-color: $colorbtn02Hvr !important; color: $colorbtn02TxtHvr !important; transition: all .3s ease-in-out 0s; }
+    .btn-two:hover td { background-color: $colorbtn02Hvr !important; transition: all .3s ease-in-out 0s; }
+    .btn-three:hover a { background-color: $colorbtn03Hvr !important; border-color: $colorbtn03Hvr !important; color: $colorbtn03TxtHvr !important; transition: all .3s ease-in-out 0s; }
+    .btn-three:hover td { background-color: $colorbtn03Hvr !important; transition: all .3s ease-in-out 0s; }
+    .btn-four:hover a { background-color: $colorbtn04Hvr !important; border-color: $colorbtn04Hvr !important; color: $colorbtn04TxtHvr !important; transition: all .3s ease-in-out 0s; }
+    .btn-four:hover td { background-color: $colorbtn04Hvr !important; transition: all .3s ease-in-out 0s; }
+    .btn-shadow:hover a, .btn-shadow2:hover a { background-color: rgba(0, 0, 0, 0.1) !important; border-color: #FFFFFF !important; transition: all .3s ease-in-out 0s; }
+    .btn-ghost:hover a { background-color: rgba(0, 0, 0, 0.50) !important; border-color: #FFFFFF !important; transition: all .3s ease-in-out 0s; } 
+    .footer a:hover { color: $colorbtn01 !important; transition: all .3s ease-in-out 0s; }
+
+    }

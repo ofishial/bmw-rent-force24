@@ -1,0 +1,30 @@
+{
+  "name": "alphabet-email-development",
+  "version": "1.0.0",
+  "description": "Alphabet Email Development",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofishial/alphabet-email-development.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ofishial/alphabet-email-development/issues"
+  },
+  "homepage": "https://github.com/ofishial/alphabet-email-development#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-replace": "^1.0.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "glob": "^7.1.4",
+    "gulp-email-builder": "^3.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^1.4.0"
+  }
+}

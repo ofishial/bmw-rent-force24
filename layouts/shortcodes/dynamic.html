@@ -1,0 +1,14 @@
+{{ if eq ( .Get "block") ("if") }}
+	{{ if .Site.IsServer }}
+	<div class="dynamic"><span class="dynamiclabel">{{.Get `display`}}</span>{{ .Inner }}</div> 
+	{{ else }}
+	<% if ( {{.Get `condition`}} ) { %> {{ .Inner }} <%} %>
+	{{ end }}
+{{ else if eq ( .Get "block") ("else") }}
+	{{ if .Site.IsServer }}
+	<div class="dynamic"><span class="dynamiclabel">{{.Get `display`}}</span>{{ .Inner }}</div> 
+	{{ else }}
+	<% if ( {{.Get `condition`}} ) { %> {{ .Inner }} <%} %>
+	{{ end }}
+{{ else }}
+{{ end }}

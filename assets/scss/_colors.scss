@@ -1,0 +1,50 @@
+
+
+        .white      { color: #FFFFFF; }
+        .black      { color: #000000; }
+
+        .c01      { color: $c01 !important; }
+        .c02      { color: $c02 !important; }
+        .c03      { color: $c03 !important; }
+        .c04      { color: $c04 !important; }
+        .c05      { color: $c05 !important; }
+        .c06      { color: $c06 !important; }
+        .c07      { color: $c07 !important; }
+        .c08      { color: $c08 !important; }
+        .c09      { color: $c09 !important; }
+        .c10      { color: $c10 !important; }
+
+        .bg-white      { background-color: #FFFFFF; }
+        .bg-black      { background-color: #000000; }
+
+        .bgcbody   { background-color: $colorbody !important; }
+        .bgcheader   { background-color: $colorheader !important; }
+        .bgcfooter   { background-color: $colorfooter !important; }
+
+        .bgc01   { background-color: $c01 ; }
+        .bgc02   { background-color: $c02 ; }
+        .bgc03   { background-color: $c03 ; }
+        .bgc04   { background-color: $c04 ; }
+        .bgc05   { background-color: $c05 ; }
+        .bgc06   { background-color: $c06 ; }
+        .bgc07   { background-color: $c07 ; }
+        .bgc08   { background-color: $c08 ; }
+        .bgc09   { background-color: $c09 ; }
+        .bgc10   { background-color: $c10 ; }
+
+        h1, h2, h3, h4 {
+            color: $colorheadings;
+        }
+
+        body, td, th, p, li {
+            color: $colortext;
+        }
+
+        a {
+            color: $colorlinks;
+        }
+
+        .preheader, .preheader th {
+            background-color: $c07;
+        }
+

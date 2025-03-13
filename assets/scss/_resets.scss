@@ -1,0 +1,35 @@
+
+
+        html, body {
+            background-color: $colorbody;
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 100% !important;
+            min-height: 100% !important;
+            width: 100% !important;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        table {
+            table-layout: fixed;
+        }
+
+        img {
+            border: none;
+            border-width: 0px;
+            outline: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        th, td {
+            font-weight: normal;
+            font-size: 0px;  
+            line-height: 0px;
+            padding: 0;
+            text-align: left;
+        }
+
+        img { max-width: 100%; }

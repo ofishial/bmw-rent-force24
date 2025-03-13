@@ -1,0 +1,31 @@
+<table class="section bg-{{.Get `bgcolor`}}" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+    <tr>
+        <th align="center" valign="middle" class="bg-{{.Get `bgcolor`}}">
+        {{ "<!--[if (gte mso 9)>" | safeHTML }}
+        <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width:{{.Get `vmlw`}}; height:{{.Get `vmlh`}};" src="{{.Get `vmlscr`}}" />
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width:{{.Get `vmlw`}}; height:{{.Get `vmlh`}};">
+        <v:fill  opacity="0%" color="{{.Get `vmlc`}}"  />
+        <v:textbox inset="0,0,0,0">
+        {{ "<![endif]-->" | safeHTML }}
+            <table class="container {{.Get `size`}}" align="center" cellspacing="0" cellpadding="0" border="0" width="620">
+                <tr>
+                    <th align="center" width="100%" valign="top">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <th class="content {{.Get `pad`}}">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        {{ .Inner }}
+                                    </table>
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        {{ "<!--[if (gte mso 9)>" | safeHTML }}
+        </v:textbox>
+        </v:rect>
+        {{ "<![endif]-->" | safeHTML }}
+        </th>
+    </tr>
+</table>

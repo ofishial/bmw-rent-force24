@@ -1,0 +1,58 @@
+{{ if eq (.Params.header.turnon) ("yes") }}
+<div class="module" title="Header - White" mc:repeatable="Header" mc:variant="white">
+<table role="presentation" class="resp" cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tr>
+        <th>
+            <table role="presentation" class="resp" cellspacing="0" cellpadding="0" border="0" width="620">
+                <tr>
+                    <th class="row">
+                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <th class="column pb10 pt10 t0 tl vmiddle" width="50%" valign="middle">
+                                    <a href="{{.Site.Data.data.urls.home}}" target="_blank"><img  class="w120 h35" src="https://mcusercontent.com/88db482d069558c0e40bce61e/images/891d722b-a736-1cac-506b-c675f6f44211.png" width="120" height="35" alt="Logo" /></a>
+                                </th> 
+                                <th class="column pb10 pt10 t0 tr vmiddle" width="50%" valign="middle">
+                                    <a href="{{.Site.Data.data.urls.home}}" target="_blank"><img class="w138 h53" src="https://mcusercontent.com/88db482d069558c0e40bce61e/images/3f962380-ac03-d6aa-0b62-b898430f6d4b.png" width="138" height="53" alt="BMW MINI" /></a>
+                                </th> 
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </th> 
+    </tr>
+    <tr>
+        <th class="bgc03 h6 t0" height="6">&nbsp;</th>
+    </tr>
+</table>
+</div>
+<div class="module" title="Header- Brown" mc:repeatable="Header" mc:variant="brown">
+ <table role="presentation" class="resp" cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tr>
+        <th class="bgc04">
+            <table role="presentation" class="resp" cellspacing="0" cellpadding="0" border="0" width="620">
+                <tr>
+                    <th class="row">
+                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <th class="pl10 pb10 pt10 t0 tl vmiddle" width="50%" valign="middle">
+                                    <a href="{{.Site.Data.data.urls.home}}" target="_blank"><img  class="w120 h35" src="https://mcusercontent.com/88db482d069558c0e40bce61e/images/891d722b-a736-1cac-506b-c675f6f44211.png" width="120" height="35" alt="Logo" /></a>
+                                </th> 
+                                <th class="pr10 pb10 pt10 t0 tr vmiddle" width="50%" valign="middle">
+                                    <a href="{{.Site.Data.data.urls.home}}" target="_blank"><img class="w138 h53" src="https://mcusercontent.com/88db482d069558c0e40bce61e/images/3f962380-ac03-d6aa-0b62-b898430f6d4b.png" width="138" height="53" alt="BMW MINI" /></a>
+                                </th> 
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </th> 
+    </tr>
+    <tr>
+        <th class="bgc03 h6 t0" height="6">&nbsp;</th>
+    </tr>
+</table>
+</div>
+{{ else if eq (.Params.header.turnon) ("no") }}
+{{ else }}
+{{ end }}

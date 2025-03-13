@@ -1,0 +1,23 @@
+  <!-- Fix for custom fonts on Outlook -->
+  {{ "<!--[if mso]>" | safeHTML }}
+    <style type="text/css" data-embed>
+        h1, h2, h3, h4, h5, h6 { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif !important; }
+        p, td, th, ul, ol, li, a { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+    </style>
+  {{ "<![endif]-->" | safeHTML }}
+  <!-- Fix for DPI scaling on Outlook -->
+  {{ "<!--[if gte mso 9]>" | safeHTML }}
+  <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  {{ "<![endif]-->" | safeHTML }}
+
+
+  {{ "<!--[if (mso)|(mso 16)]>" | safeHTML }}
+    <style type="text/css">
+    a {text-decoration: none;}
+    </style>
+  {{ "<![endif]-->" | safeHTML }}

@@ -1,0 +1,66 @@
+{{ define "header" }}{{ partial "header.html" . }}{{ end }}
+{{ define "main" }}
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $.Scratch.Add "path" .Site.BaseURL }}
+<tr>
+    <th align="center" valign="middle">
+    	<table class="content" cellspacing="0" cellpadding="0" border="0" width="620">
+		    <tr>
+		        <th class="pt20 pl20 pr20" align="center" valign="middle">
+		        	<p>
+		        	<ul class="breadcrumbs tc">
+					  <li><a href="/">Home</a></li>
+					  {{ range $index, $element := split $url "/" }}
+					    {{ $.Scratch.Add "path" $element }}
+					      {{ if ne $element "" }}
+					      <li> > <a href='{{ $.Scratch.Get "path" }}'>{{ . | title }}</a></li>
+					      {{ $.Scratch.Add "path" "/" }}
+					      {{ end }}
+					  {{ end }}
+					</ul>
+				</p>
+				</th>
+			</tr>
+		</table>
+	  	<table class="content" cellspacing="0" cellpadding="0" border="0" width="620">
+		    <tr>
+		        <th class="pl20" align="center" valign="middle">
+					{{ range .Sections }}
+		        	<a href="{{ .Permalink }}" style="text-decoration: none;">
+					<table class="responsive tile bg-white" cellspacing="0" cellpadding="0" border="0" width="100%">
+					    <tr>
+					        <th class="w20 pt10 pr0 pb10 pl20 t0" align="center" valign="middle">
+					            <img src="/img/folder-60x60-2x.png" width="25" height="25" />
+					        </th>
+					        <th class="pt10 pr20 pb10 pl20 tc">
+					            <p>{{ .Title }}</p>
+					        </th>
+					        <th class="w40 pt10 pr20 pb10 pl20 tr">
+					            <a class="green-3" style="text-decoration: none;" href="{{ .Permalink }}">&#9654;</a>
+					        </th>
+					    </tr>
+					</table></a>
+					{{ end }}
+					{{ range .Pages }}
+		        	<a href="{{ .Permalink }}" target="_blank" style="text-decoration: none;">
+			  		<table class="responsive tile bg-white" cellspacing="0" cellpadding="0" border="0" width="100%">
+					    <tr>
+					        <th class="w20 pt10 pr0 pb10 pl20 t0" align="center" valign="middle">
+					            <img src="/img/envelope-60x60-2x.png" width="25" height="25" />
+					        </th>
+					        <th class="pt10 pr20 pb10 pl20 tc">
+					            <p>{{ .Title }}</p>
+					        </th>
+					        <th class="w40 pt10 pr20 pb10 pl20 tr">
+					            <a class="green-3" style="text-decoration: none;" href="{{ .Permalink }}" target="_blank">&#9654;</a>
+					        </th>
+					    </tr>
+					</table></a>
+					{{ end }}
+				</th>
+			</tr>
+		</table>
+	</th>
+</tr>
+{{ end }}
+{{ define "footer" }}{{ partial "footer.html" . }}{{ end }}

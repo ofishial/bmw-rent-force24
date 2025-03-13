@@ -1,0 +1,132 @@
+
+        .btn td {
+           transition: all .3s ease-in-out 0s;
+        }
+
+        .btn a {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: bold;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-decoration: none;
+            padding: 8px 20px 8px 20px;
+            display: inline-block;
+            box-sizing: border-box;
+            transition: all .3s ease-in-out 0s;
+            letter-spacing: 1px;
+        }
+
+        .btn-ghost td {
+            background-color: transparent;
+        }
+
+        .btn-ghost a {
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+            background-color: transparent;
+            border: 1px solid #FFFFFF;
+        }
+
+        .btn-shadow td {
+            background-color: none;
+        }
+
+        .btn-shadow {
+            color: $colorbtn01;
+            border-color: $colorbtn01;
+            background-color: transparent;
+            border: 1px solid $colorbtn01;
+        }
+
+        .btn-shadow2 td {
+            background-color: none;
+        }
+
+        .btn-shadow2 {
+            color: $c02;
+            border-color: $colorbtn02Hvr;
+            background-color: transparent;
+            border: 1px solid $colorbtn02Hvr;
+        }
+
+        .btn-text a, .btn-text2 a {
+            font-size: 20px;
+            line-height: 24px;
+            text-decoration: underline;
+        }
+
+        .btn-text1 a {
+            color: $c06;
+        }
+
+        .btn-text2 a {
+            color: $c02;
+        }
+
+        .btn-text3 a {
+            color: $c04;
+        }
+
+        .btn-one td {
+            background-color: $colorbtn01;
+        }
+
+        .btn-one .btn-symbol {
+            color: $colorbtn01TxtHvr;
+            background-color: $colorbtn01Hvr;
+        }
+
+        .btn-one a {
+            color: $colorbtn01Txt;
+            border-color: $colorbtn01;
+            background-color: $colorbtn01;
+            border: 1px solid $colorbtn01;
+        }
+
+        .btn-two td {
+            background-color: $colorbtn02;
+        }
+
+        .btn-two .btn-symbol {
+            color: $colorbtn02TxtHvr;
+            background-color: $colorbtn02Hvr;
+        }
+
+        .btn-two a {
+            color: $colorbtn02Txt;
+            border-color: $colorbtn02;
+            background-color: $colorbtn02;
+            border: 1px solid $colorbtn02;
+        }
+
+        .btn-three td {
+            background-color: $colorbtn03;
+        }
+
+        .btn-three .btn-symbol {
+            color: $colorbtn03TxtHvr;
+            background-color: $colorbtn03Hvr;
+        }
+
+        .btn-three a {
+            color: $colorbtn03Txt;
+            border-color: $colorbtn03;
+            background-color: $colorbtn03;
+            border: 1px solid $colorbtn03;
+        }
+
+        .btn-four td {
+            background-color: $colorbtn04;
+        }
+
+        .btn-four .btn-symbol {
+            color: $colorbtn04TxtHvr;
+            background-color: $colorbtn04Hvr;
+        }
+
+        .btn-four a {
+            color: $colorbtn04Txt;
+            border-color: $colorbtn04;
+            background-color: $colorbtn04;
+            border: 1px solid $colorbtn04;
+        }

@@ -1,0 +1,9 @@
+baseURL = ""
+languageCode = "en-uk"
+title = "Elysian Email Development"
+enableRobotsTXT = false
+disableKinds = ["sitemap", "404", "RSS", "robotsTXT"]
+publishDir = "compiled"
+ignoreFiles = [ "\\.dynamic$", "\\.field$" ]
+[markup]
+  defaultMarkdownHandler = "blackfriday"

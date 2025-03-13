@@ -1,0 +1,39 @@
+<!-- Break - Begin -->
+<tr>
+    <th class="bg-{{.Get `bgcolor`}} {{.Get `pad`}}" align="center" valign="middle">
+        <table class="" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+            <tr>
+                <th class="break-content-sides vab" align="center" valign="bottom">
+                    <table class="bg-{{.Get `bgcolor`}}" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+        			    <tr><th class="bg-{{.Get `padcolor`}} h{{.Get `padheight`}}" align="center">&nbsp;</th></tr>
+        			</table>
+                </th>
+                <th class="break-content" align="center" valign="middle" width="{{.Get `contentwidth`}}">
+                    <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <th align="center" width="100%" valign="top">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <th>
+                                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <th class="t0">{{ .Inner }}</th>
+                                                </tr>
+                                            </table>
+                                        </th>
+                                    </tr>
+                                </table>
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+                <th class="break-content-sides vab" align="center" valign="bottom">
+                    <table class="bg-{{.Get `bgcolor`}}" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+        			    <tr><th class="bg-{{.Get `padcolor`}} h{{.Get `padheight`}}" align="center">&nbsp;</th></tr>
+        			</table>
+                </th>
+            </tr>
+        </table>
+    </th>
+</tr>
+<!-- Break - End -->

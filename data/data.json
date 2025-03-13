@@ -1,0 +1,28 @@
+{
+	"urls": {
+		"home": "#",
+		"support": "#",
+		"terms": "#",
+		"privacy": "#",
+		"legal": "#",
+		"cookie": "#",
+		"account": "#",
+		"contact": "#",
+		"facebook": "#",
+		"twitter": "#",
+		"youtube": "#",
+		"linkedin": "#",
+		"instagram": "#",
+		"viewbrowser": "#",
+		"unsubscribe": "*|UNSUB|*",
+		"addressbook": "#",
+		"disclaimer": "#",
+		"preference": "*|UPDATE_PROFILE|*",
+		"events": "#",
+		"residences": "#",
+		"app01": "#",
+		"app02": "#",
+		"app03": "#",
+		"app04": "#"
+	}
+}

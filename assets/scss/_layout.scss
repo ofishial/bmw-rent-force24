@@ -1,0 +1,50 @@
+
+
+        .section { 
+            min-width: 100% !important;
+        }
+
+        .container {
+            width: $container;
+        }
+
+        .content {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .row {
+            padding-top: $row;
+            padding-right: $row;
+            padding-bottom: $row;
+            padding-left: $row;
+        }
+
+        .column {
+            padding-top: $col;
+            padding-right: $col;
+            padding-bottom: $col;
+            padding-left: $col;
+        }
+
+        hr {
+            border-top: 1px solid $c02;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .hidden-preview {
+            display:none !important;
+            visibility:hidden;
+            mso-hide:all;
+            font-size:1px;
+            color:#ffffff;
+            line-height:1px;
+            max-height:0px;
+            max-width:0px;
+            opacity:0;
+            overflow:hidden;
+        }

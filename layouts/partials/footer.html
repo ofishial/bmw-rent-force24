@@ -1,0 +1,89 @@
+<div class="module" title="Footer">
+    <table role="presentation" class="resp" align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tr mc:hideable="">
+        <th align="center" valign="top" width="100%">
+            <table role="presentation" class="resp" cellspacing="0" cellpadding="0" border="0" width="620">   
+                <tr>
+                    <th class="row">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <th class="column tl">
+                                    <table role="presentation" cellspacing="0" wdth="100%" cellpadding="0" border="0" align="left" style="table-layout: fixed;">
+                                        <tr>
+                                            <th class="tl" mc:hideable="" >
+                                                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="left" style="table-layout: auto;">
+                                                    <tr>
+                                                        <th width="auto" class="tl pr10 pr5 py5"><a href="{{.Site.Data.data.urls.instagram}}" target="_blank"><img class="w30 h30" src="https://mcusercontent.com/88db482d069558c0e40bce61e/images/748c959a-fc78-833c-67a3-cad08b2ff51a.png" width="30" height="30" alt="Instagram" border="0"></a></th>
+                                                    </tr>
+                                                </table>
+                                            </th>
+                                            <th class="tl" mc:hideable="" >
+                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="left" style="table-layout: auto;">
+                                                    <tr>
+                                                        <th width="auto" class="tl px10 py5"><a href="{{.Site.Data.data.urls.instagram}}" target="_blank"><img class="w30 h30" src="https://mcusercontent.com/88db482d069558c0e40bce61e/images/f331f741-3e61-41a6-194b-0db17986ae23.png" width="30" height="30" alt="Twitter" border="0"></a></th>
+                                                    </tr>
+                                                </table>
+                                            </th>
+                                            <th class="tl" mc:hideable="" >
+                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="left" style="table-layout: auto;">
+                                                    <tr>
+                                                        <th width="auto" class="tl px10 py5"><a href="{{.Site.Data.data.urls.instagram}}" target="_blank"><img class="w30 h30" src="https://mcusercontent.com/88db482d069558c0e40bce61e/images/40481cac-dcdc-59f3-95f4-2c3846e3e018.png" width="30" height="30" alt="Facebook" border="0"></a></th>
+                                                    </tr>
+                                                </table>
+                                            </th>
+                                            <th class="tl" mc:hideable="" >
+                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="left" style="table-layout: auto;">
+                                                    <tr>
+                                                        <th width="auto" class="tl px10 py5"><a href="{{.Site.Data.data.urls.instagram}}" target="_blank"><img class="w30 h30" src="https://mcusercontent.com/88db482d069558c0e40bce61e/images/b93a309a-d722-b436-f4f5-8a677206ecb6.png" width="30" height="30" alt="YouTube" border="0"></a></th>
+                                                    </tr>
+                                                </table>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </th>
+    </tr>
+    <tr>
+        <th class="bgc03 h6 t0" height="6">&nbsp;</th>
+    </tr>
+    <tr>
+        <th class="content pb20 bgc04" align="center" valign="top" width="100%">
+            <table role="presentation" class="resp" cellspacing="0" cellpadding="0" border="0" width="620">     
+                <tr>
+                    <th class="row">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr mc:hideable>
+                                <th class="tl pt10 pl10 pr10">
+                                    <h3 class="heading mb10" mc:edit="footer-std-col1-h"><span class="c03">LOREM IPSUM DOLOR SIT AMET,</span><br>CONSECTETUR ADIPISCING ELIT.</h3>
+                                </th>
+                            </tr>
+                            {{ if .Params.footer.tls }}
+                            <tr mc:hideable="">
+                                <th class="pl10 pr10">
+                                    <p class="legal tl" mc:edit="footer-std-col1-tls">{{ with .Params.footer.tls }}{{ . | safeHTML }}{{ end }}</p>
+                                </th>
+                            </tr>
+                            {{ else }}{{ end }}
+                            <tr>
+                                <th class="pl10 pr10 tl">
+                                    <p class="legal c01">Tel: <a class="c01" href="tel:123456789" target="_blank">123456789</a><br>Mob: <a class="c01" href="tel:123456789" target="_blank">123456789</a></p>
+                                </th>
+                            </tr>
+                            <tr mc:hideable="">
+                                <th class="pl10 pr10">
+                                    <p class="legal tl mb0" mc:edit="footer-std-col1-tls2">{{ with .Params.footer.tls }}{{ . | safeHTML }}{{ end }}</p>
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </th>
+    </tr>
+</table>
+</div>
